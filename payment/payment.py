@@ -1,6 +1,6 @@
 import random
 
-import instana
+import instana# type: ignore
 import os
 import sys
 import time
@@ -9,14 +9,14 @@ import uuid
 import json
 import requests
 import traceback
-from flask import Flask
-from flask import Response
-from flask import request
-from flask import jsonify
+from flask import Flask # type: ignore
+from flask import Response # type: ignore
+from flask import request# type: ignore
+from flask import jsonify# type: ignore
 from rabbitmq import Publisher
 # Prometheus
-import prometheus_client
-from prometheus_client import Counter, Histogram
+import prometheus_client# type: ignore
+from prometheus_client import Counter, Histogram# type: ignore
 
 app = Flask(__name__)
 app.logger.setLevel(logging.INFO)
