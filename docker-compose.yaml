@@ -34,8 +34,8 @@ services:
   mysql:
     image: joindevops/mysql:v1
     container_name: mysql
-    volumes:
-    - mysql:/var/lib/mysql
+    # volumes:
+    # - mysql:/var/lib/mysql
   shipping:
     image: joindevops/shipping:v1
     container_name: shipping
